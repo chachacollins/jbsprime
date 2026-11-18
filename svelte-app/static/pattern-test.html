@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kitenge Pattern Test</title>
+<style>
+body { margin: 0; background: #66242b; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; gap: 40px; font-family: sans-serif; color: #f7f3ee; }
+h2 { margin: 0; }
+.test { background: #f2f2f2; width: 100%; }
+</style>
+</head>
+<body>
+
+<h2>Pattern Preview (44px height, full width)</h2>
+
+<svg class="test" height="44" aria-hidden="true">
+  <defs>
+    <pattern id="kit1" width="80" height="44" patternUnits="userSpaceOnUse">
+      <!-- Upper koru scroll -->
+      <path d="M0,22 C0,8 12,0 26,0 L40,0 C30,0 22,8 22,18 C22,26 28,30 34,28 C38,27 40,24 38,20"
+        fill="none" stroke="#ff3b47" stroke-width="3" stroke-linecap="round"/>
+      <!-- Lower koru scroll -->
+      <path d="M40,22 C40,36 52,44 66,44 L80,44 C70,44 62,36 62,26 C62,18 68,14 74,16 C78,17 80,20 78,24"
+        fill="none" stroke="#ff3b47" stroke-width="3" stroke-linecap="round"/>
+      <!-- Connecting spine -->
+      <path d="M0,22 Q20,22 40,22 Q60,22 80,22"
+        fill="none" stroke="#ff3b47" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Upper fill -->
+      <path d="M0,20 C0,6 14,-1 28,2 C20,4 14,12 16,20 Z" fill="#ff3b47" opacity="0.25"/>
+      <!-- Lower fill -->
+      <path d="M40,24 C40,38 54,45 68,42 C60,40 54,32 56,24 Z" fill="#ff3b47" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#kit1)"/>
+</svg>
+
+<h2>Alt: Filled koru S-wave (classic kōwhaiwhai)</h2>
+
+<svg class="test" height="44" aria-hidden="true">
+  <defs>
+    <pattern id="kit2" width="88" height="44" patternUnits="userSpaceOnUse">
+      <!--
+        Classic kōwhaiwhai: filled interlocking koru.
+        Upper half = red wave sweeping right.
+        Lower half = background (negative space) forms the mirrored wave.
+      -->
+      <!-- Main filled S-wave body -->
+      <path
+        d="M0,22
+           C0,6 16,0 30,0
+           L44,0
+           C44,0 36,6 36,16
+           C36,22 40,26 44,22
+           C44,16 52,8 60,8
+           C72,8 88,16 88,22
+           C88,38 72,44 58,44
+           L44,44
+           C44,44 52,38 52,28
+           C52,22 48,18 44,22
+           C44,28 36,36 28,36
+           C16,36 0,28 0,22Z"
+        fill="#ff3b47"
+      />
+      <!-- Inner koru curl cutout — upper -->
+      <circle cx="30" cy="12" r="5" fill="#f2f2f2"/>
+      <!-- Inner koru curl cutout — lower -->
+      <circle cx="58" cy="32" r="5" fill="#f2f2f2"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#kit2)"/>
+</svg>
+
+<h2>Alt: Stroke-only double koru wave</h2>
+
+<svg class="test" height="44" aria-hidden="true">
+  <defs>
+    <pattern id="kit3" width="64" height="44" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#ff3b47" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Outer wave -->
+        <path d="M0,22 C0,4 18,0 32,0 C46,0 46,16 36,20 C30,22 28,18 30,14"
+          stroke-width="2.5"/>
+        <!-- Mirrored lower wave -->
+        <path d="M32,22 C32,40 50,44 64,44 C78,44 78,28 68,24 C62,22 60,26 62,30"
+          stroke-width="2.5"/>
+        <!-- Connecting tendril -->
+        <path d="M0,22 L32,22 L64,22"
+          stroke-width="1" opacity="0.4"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#kit3)"/>
+</svg>
+
+<h2>Alt: Filled wave with clean tiling</h2>
+
+<svg class="test" height="44" aria-hidden="true">
+  <defs>
+    <pattern id="kit4" width="72" height="44" patternUnits="userSpaceOnUse">
+      <!--
+        Smooth wave: upper half red, lower half background.
+        Koru curls sit at the wave crests/troughs.
+      -->
+      <!-- Wave body -->
+      <path
+        d="M0,22
+           Q18,0 36,22
+           Q54,44 72,22"
+        fill="none" stroke="#ff3b47" stroke-width="3"/>
+      <!-- Upper koru curl -->
+      <path
+        d="M18,8 C22,2 30,2 32,8 C34,14 28,16 24,12"
+        fill="none" stroke="#ff3b47" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Lower koru curl -->
+      <path
+        d="M54,36 C50,42 42,42 40,36 C38,30 44,28 48,32"
+        fill="none" stroke="#ff3b47" stroke-width="2.5" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#kit4)"/>
+</svg>
+
+</body>
+</html>
