@@ -1,12 +1,6 @@
 <script lang="ts">
 	import Logo from './Logo.svelte';
 
-	const quickLinks = [
-		{ href: '#about', label: 'What We Do' },
-		{ href: '#about', label: 'Our Story' },
-		{ href: '#top', label: 'Visit Us' }
-	];
-
 	let year = new Date().getFullYear();
 </script>
 
@@ -73,16 +67,6 @@
 				<p class="brand-tagline">
 					Great food, fine drinks and a place for exceptional moments. Opening soon at Waris Mall on the Eastern Bypass.
 				</p>
-			</div>
-
-			<!-- Quick Links -->
-			<div class="footer-col">
-				<h4 class="col-title">Quick Links</h4>
-				<ul class="link-list">
-					{#each quickLinks as link}
-						<li><a href={link.href}>{link.label}</a></li>
-					{/each}
-				</ul>
 			</div>
 
 			<!-- Contact -->
@@ -153,7 +137,7 @@
 					<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
 						<path d="M12,21 L10.55,19.7C5.4,15.1 2,12.1 2,8.5C2,5.4 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.09C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.4 22,8.5C22,12.1 18.6,15.1 13.45,19.7L12,21Z" fill="var(--red)"/>
 					</svg>
-					by <a href="https://collinschacha.com" class="credit-link" target="_blank" rel="noopener noreferrer">Collins Chacha</a>
+					by <a href="https://chachas.site" class="credit-link" target="_blank" rel="noopener noreferrer">Collins Chacha</a>
 				</span>
 			</div>
 		</div>
@@ -365,7 +349,7 @@
 	   ============================================= */
 	.footer-grid {
 		display: grid;
-		grid-template-columns: 1.4fr 0.8fr 1fr 1fr;
+		grid-template-columns: 1.4fr 1fr 1fr;
 		gap: clamp(28px, 4vw, 64px);
 		padding-bottom: clamp(40px, 5vw, 64px);
 	}
@@ -400,53 +384,6 @@
 		margin: 0 0 clamp(16px, 2vw, 24px);
 		color: var(--red);
 		letter-spacing: -0.01em;
-	}
-
-	/* =============================================
-	   QUICK LINKS
-	   ============================================= */
-	.link-list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	.link-list li {
-		margin-bottom: 0;
-	}
-
-	.link-list a {
-		display: inline-block;
-		padding: 7px 0;
-		font-weight: 600;
-		font-size: 0.82rem;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: var(--ink);
-		opacity: 0.7;
-		transition: opacity 0.25s, transform 0.25s, color 0.25s;
-		position: relative;
-	}
-
-	.link-list a::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 4px;
-		width: 0;
-		height: 1.5px;
-		background: var(--gold);
-		transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	}
-
-	.link-list a:hover {
-		opacity: 1;
-		transform: translateX(6px);
-		color: var(--gold);
-	}
-
-	.link-list a:hover::after {
-		width: 100%;
 	}
 
 	/* =============================================
