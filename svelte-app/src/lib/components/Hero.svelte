@@ -199,6 +199,12 @@
 
 		.cta {
 			gap: 14px;
+			padding-bottom: clamp(100px, 16vh, 140px);
+		}
+
+		.corner.l {
+			bottom: 16px;
+			font-size: 0.75rem;
 		}
 
 		.corner.r {
