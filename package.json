@@ -1,6 +1,6 @@
 {
-	"name": "svelte-app",
-	"version": "0.0.1",
+	"name": "jbsprime-website",
+	"version": "1.0.0",
 	"private": true,
 	"type": "module",
 	"imports": {
