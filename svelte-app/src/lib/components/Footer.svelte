@@ -548,21 +548,25 @@
 	}
 
 	/* =============================================
-	   CTA BUTTON — big, bold, alive
+	   CTA BUTTON — oval pill matching hero style
 	   ============================================= */
 	.footer-cta {
 		display: inline-flex;
 		align-items: center;
+		justify-content: center;
 		gap: 10px;
-		padding: 16px 32px;
-		border: 2px solid var(--red);
-		border-radius: 99px;
+		width: 240px;
+		height: 80px;
+		border: 1px solid var(--ink);
+		border-color: var(--red);
+		border-radius: 50%;
 		font-weight: 700;
 		font-size: 0.82rem;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: var(--red);
-		transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+		margin-top: 24px;
+		transition: background 0.25s, color 0.25s, transform 0.3s, box-shadow 0.3s;
 	}
 
 	.footer-cta:hover {
@@ -664,6 +668,12 @@
 	@media (max-width: 600px) {
 		.footer-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.footer-cta {
+			width: 200px;
+			height: 68px;
+			font-size: 0.8rem;
 		}
 
 		.footer-bottom {
