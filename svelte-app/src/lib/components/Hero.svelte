@@ -6,7 +6,7 @@
 		{ href: '#about', label: 'About us' },
 		{ href: '#menu', label: 'Menu' },
 		{ href: '#contact', label: 'Contact' },
-		{ href: '#directions', label: 'Directions' }
+		{ href: 'https://www.google.com/maps/dir/?api=1&destination=Waris+Mall,+Eastern+Bypass,+Ruai', label: 'Directions' }
 	];
 </script>
 
@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="cta">
-		<a class="btn red" href="#directions">Get directions</a>
+		<a class="btn red" href="https://www.google.com/maps/dir/?api=1&destination=Waris+Mall,+Eastern+Bypass,+Ruai" target="_blank" rel="noopener noreferrer">Get directions</a>
 		<a class="btn white" href="#menu">View the menu</a>
 	</div>
 

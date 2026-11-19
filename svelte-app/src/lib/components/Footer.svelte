@@ -131,7 +131,7 @@
 					</p>
 				</div>
 				<!-- CTA pill -->
-				<a href="#directions" class="footer-cta" id="directions">
+				<a href="https://www.google.com/maps/dir/?api=1&destination=Waris+Mall,+Eastern+Bypass,+Ruai" class="footer-cta" id="directions" target="_blank" rel="noopener noreferrer">
 					Get Directions
 					<svg viewBox="0 0 24 24" class="arrow-icon" aria-hidden="true">
 						<path d="M5,12 H19 M13,6 L19,12 L13,18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
