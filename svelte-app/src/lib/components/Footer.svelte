@@ -446,22 +446,22 @@
 		gap: 10px;
 		width: 240px;
 		height: 80px;
-		border: 1px solid #25d366;
+		border: 1px solid var(--gold);
 		border-radius: 50%;
 		font-weight: 700;
 		font-size: 0.82rem;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
-		color: #25d366;
+		color: var(--gold);
 		margin-top: 20px;
 		transition: background 0.25s, color 0.25s, transform 0.3s, box-shadow 0.3s;
 	}
 
 	.whatsapp-btn:hover {
-		background: #25d366;
+		background: var(--gold);
 		color: var(--bg);
 		transform: translateY(-3px);
-		box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+		box-shadow: 0 8px 30px rgba(240, 210, 60, 0.3);
 	}
 
 	.whatsapp-icon {
