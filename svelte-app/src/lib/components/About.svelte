@@ -92,7 +92,7 @@
 
 <style>
 	.about {
-		background: #f2f2f2;
+		background: #f7f3ee;
 		color: var(--bg);
 		padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 96px);
 		overflow: hidden;

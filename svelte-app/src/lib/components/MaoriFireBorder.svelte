@@ -11,7 +11,7 @@
 	let {
 		flip = false,
 		topColor = 'var(--bg)',
-		bottomColor = '#f2f2f2'
+		bottomColor = '#f7f3ee'
 	}: {
 		flip?: boolean;
 		topColor?: string;

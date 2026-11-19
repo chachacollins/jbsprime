@@ -66,7 +66,7 @@
 
 <style>
 	.kids {
-		background: #f2f2f2;
+		background: #f7f3ee;
 		color: var(--bg, #66242b);
 		padding: clamp(56px, 8vw, 100px) clamp(20px, 5vw, 96px);
 	}

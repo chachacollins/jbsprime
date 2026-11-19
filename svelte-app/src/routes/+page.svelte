@@ -4,6 +4,7 @@
 	import MaoriFireBorder from '#lib/components/MaoriFireBorder.svelte';
 	import Menu from '#lib/components/Menu.svelte';
 	import KidsCorner from '#lib/components/KidsCorner.svelte';
+	import Footer from '#lib/components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -12,7 +13,9 @@
 
 <Hero />
 <About />
-<MaoriFireBorder topColor="#f2f2f2" bottomColor="#f7f3ee" />
+<MaoriFireBorder topColor="#f7f3ee" bottomColor="#f7f3ee" />
 <Menu />
-<MaoriFireBorder topColor="#f7f3ee" bottomColor="#f2f2f2" />
+<MaoriFireBorder topColor="#f7f3ee" bottomColor="#f7f3ee" />
 <KidsCorner />
+<MaoriFireBorder topColor="#f7f3ee" bottomColor="#f7f3ee" />
+<Footer />
