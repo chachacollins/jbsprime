@@ -11,37 +11,37 @@
 		name: 'THE AMBIORIX',
 		description:
 			'A BRAND NEW <em>Snack of the Month</em>! AN OLD FAVOURITE THAT MANY HAVE SEEN BUT NEVER TRIED. <em>The Ambiorix</em>! 🔥 IT\'S SUPER SIMPLE. A MEATBALL WITH ONIONS IN BETWEEN! THIS COMBO IS PERFECT! 👌 COME GIVE IT A TRY, BECAUSE WE MAKE THEM OURSELVES! 🤩 SEE YOU SOON! TEAM JB\'S! 🍟',
-		price: '3.90 EUR'
+		price: 'KSh 644'
 	};
 
 	const burgers: MenuItem[] = [
-		{ name: 'BICKYBURGER', price: '4.00 EUR' },
-		{ name: 'BICKY CHEESE', price: '4.20 EUR' },
-		{ name: 'BICKY RIB', price: '4.30 EUR' },
-		{ name: 'BICKY CRISPY', price: '4.20 EUR' },
-		{ name: 'BICKY CHICKEN', price: '4.50 EUR' },
-		{ name: 'BICKY FISH', price: '4.50 EUR' },
-		{ name: 'BICKY WRAP', price: '5.00 EUR' },
-		{ name: 'CHEESEBURGER', price: '4.00 EUR' },
-		{ name: 'HAMBURGER + BUN', price: '3.50 EUR' }
+		{ name: 'BICKYBURGER', price: 'KSh 660' },
+		{ name: 'BICKY CHEESE', price: 'KSh 693' },
+		{ name: 'BICKY RIB', price: 'KSh 710' },
+		{ name: 'BICKY CRISPY', price: 'KSh 693' },
+		{ name: 'BICKY CHICKEN', price: 'KSh 743' },
+		{ name: 'BICKY FISH', price: 'KSh 743' },
+		{ name: 'BICKY WRAP', price: 'KSh 825' },
+		{ name: 'CHEESEBURGER', price: 'KSh 660' },
+		{ name: 'HAMBURGER + BUN', price: 'KSh 578' }
 	];
 
 	const fries: MenuItem[] = [
-		{ name: 'FRIES KIDS', price: '2.50 EUR' },
-		{ name: 'FRIES SMALL', price: '2.70 EUR' },
-		{ name: 'FRIES MEDIUM', price: '3.20 EUR' },
-		{ name: 'FRIES LARGE', price: '3.70 EUR' },
-		{ name: 'FRIES FAMILY SIZE', price: '7.50 EUR' },
-		{ name: 'JULIENTJE', price: '9.00 EUR' },
-		{ name: 'ROMBOUTJE', price: '9.00 EUR' },
-		{ name: 'SNACK BOX', price: '9.00 EUR' }
+		{ name: 'FRIES KIDS', price: 'KSh 413' },
+		{ name: 'FRIES SMALL', price: 'KSh 446' },
+		{ name: 'FRIES MEDIUM', price: 'KSh 528' },
+		{ name: 'FRIES LARGE', price: 'KSh 611' },
+		{ name: 'FRIES FAMILY SIZE', price: 'KSh 1,238' },
+		{ name: 'JULIENTJE', price: 'KSh 1,485' },
+		{ name: 'ROMBOUTJE', price: 'KSh 1,485' },
+		{ name: 'SNACK BOX', price: 'KSh 1,485' }
 	];
 
 	const sauces: MenuItem[] = [
-		{ name: 'YELLOW BICKY', price: '1.20 EUR' },
-		{ name: 'MUSTARD', price: '1.20 EUR' },
-		{ name: 'BURGER SAUCE', price: '1.20 EUR' },
-		{ name: 'PILI PILI', price: '1.20 EUR' }
+		{ name: 'YELLOW BICKY', price: 'KSh 198' },
+		{ name: 'MUSTARD', price: 'KSh 198' },
+		{ name: 'BURGER SAUCE', price: 'KSh 198' },
+		{ name: 'PILI PILI', price: 'KSh 198' }
 	];
 </script>
 
