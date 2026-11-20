@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+    export const prerender = true;
 
 	let { children }: { children: Snippet } = $props();
 </script>
