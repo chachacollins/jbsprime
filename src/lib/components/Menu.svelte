@@ -1,129 +1,27 @@
 <script lang="ts">
 	import Logo from './Logo.svelte';
-
-	interface MenuItem {
-		name: string;
-		price: string;
-	}
-
-	const snackOfTheMonth = {
-		title: 'Snack of the Month',
-		name: 'THE AMBIORIX',
-		description:
-			'A BRAND NEW <em>Snack of the Month</em>! AN OLD FAVOURITE THAT MANY HAVE SEEN BUT NEVER TRIED. <em>The Ambiorix</em>! 🔥 IT\'S SUPER SIMPLE. A MEATBALL WITH ONIONS IN BETWEEN! THIS COMBO IS PERFECT! 👌 COME GIVE IT A TRY, BECAUSE WE MAKE THEM OURSELVES! 🤩 SEE YOU SOON! TEAM JB\'S! 🍟',
-		price: 'KSh 644'
-	};
-
-	const burgers: MenuItem[] = [
-		{ name: 'BICKYBURGER', price: 'KSh 660' },
-		{ name: 'BICKY CHEESE', price: 'KSh 693' },
-		{ name: 'BICKY RIB', price: 'KSh 710' },
-		{ name: 'BICKY CRISPY', price: 'KSh 693' },
-		{ name: 'BICKY CHICKEN', price: 'KSh 743' },
-		{ name: 'BICKY FISH', price: 'KSh 743' },
-		{ name: 'BICKY WRAP', price: 'KSh 825' },
-		{ name: 'CHEESEBURGER', price: 'KSh 660' },
-		{ name: 'HAMBURGER + BUN', price: 'KSh 578' }
-	];
-
-	const fries: MenuItem[] = [
-		{ name: 'FRIES KIDS', price: 'KSh 413' },
-		{ name: 'FRIES SMALL', price: 'KSh 446' },
-		{ name: 'FRIES MEDIUM', price: 'KSh 528' },
-		{ name: 'FRIES LARGE', price: 'KSh 611' },
-		{ name: 'FRIES FAMILY SIZE', price: 'KSh 1,238' },
-		{ name: 'JULIENTJE', price: 'KSh 1,485' },
-		{ name: 'ROMBOUTJE', price: 'KSh 1,485' },
-		{ name: 'SNACK BOX', price: 'KSh 1,485' }
-	];
-
-	const sauces: MenuItem[] = [
-		{ name: 'YELLOW BICKY', price: 'KSh 198' },
-		{ name: 'MUSTARD', price: 'KSh 198' },
-		{ name: 'BURGER SAUCE', price: 'KSh 198' },
-		{ name: 'PILI PILI', price: 'KSh 198' }
-	];
 </script>
 
 <section class="menu" id="menu">
 	<div class="menu-inner">
-		<!-- Header -->
 		<div class="menu-header">
 			<h2 class="menu-title">Menu</h2>
 			<div class="menu-logo">
-			<Logo href="#top" label="JB's Prime Grill &amp; Lounge" />
-		</div>
-		</div>
-
-		<!-- Snack van de maand -->
-		<div class="snack-card">
-			<h3 class="snack-title">{snackOfTheMonth.title}</h3>
-			<p class="snack-name">{snackOfTheMonth.name}</p>
-			<p class="snack-desc">{@html snackOfTheMonth.description}</p>
-			<span class="snack-price">{snackOfTheMonth.price}</span>
-		</div>
-
-		<!-- Two-column layout -->
-		<div class="columns">
-			<!-- Left column: Burgers -->
-			<div class="col-left">
-				<div class="category">
-					<div class="category-header">
-						<svg class="category-icon" viewBox="0 0 60 50" aria-hidden="true">
-							<path d="M10 24 Q12 6 30 6 Q48 6 50 24Z" fill="none" stroke="var(--red)" stroke-width="2"/>
-							<path d="M8 30 Q16 38 24 30 Q32 38 40 30 Q48 38 54 30" fill="none" stroke="var(--red)" stroke-width="2"/>
-							<path d="M10 36 H50" stroke="var(--red)" stroke-width="2"/>
-							<path d="M12 36 Q14 48 30 48 Q46 48 48 36" fill="none" stroke="var(--red)" stroke-width="2"/>
-						</svg>
-						<h3 class="category-title">Burgers</h3>
-					</div>
-					{#each burgers as item}
-						<div class="menu-item">
-							<span class="item-name">{item.name}</span>
-							<span class="item-dots"></span>
-							<span class="item-price">{item.price}</span>
-						</div>
-					{/each}
-				</div>
+				<Logo href="#top" label="JB's Prime Grill &amp; Lounge" />
 			</div>
+		</div>
 
-			<!-- Right column: Frietjes + Sauzen -->
-			<div class="col-right">
-				<div class="category">
-					<div class="category-header">
-						<svg class="category-icon" viewBox="0 0 60 60" aria-hidden="true">
-							<path d="M18 30 L24 58 H36 L42 30Z" fill="none" stroke="var(--red)" stroke-width="2"/>
-							<path d="M22 28 L20 8 M28 28 L27 4 M34 28 L36 6 M40 28 L44 10" stroke="var(--red)" stroke-width="2.5" stroke-linecap="round"/>
-						</svg>
-						<h3 class="category-title">Fries</h3>
-					</div>
-					{#each fries as item}
-						<div class="menu-item">
-							<span class="item-name">{item.name}</span>
-							<span class="item-dots"></span>
-							<span class="item-price">{item.price}</span>
-						</div>
-					{/each}
-				</div>
-
-				<div class="category">
-					<div class="category-header">
-						<svg class="category-icon" viewBox="0 0 60 50" aria-hidden="true">
-							<rect x="8" y="12" width="44" height="8" rx="4" fill="none" stroke="var(--red)" stroke-width="2"/>
-							<path d="M14 20 L14 36 Q14 44 30 44 Q46 44 46 36 L46 20" fill="none" stroke="var(--red)" stroke-width="2"/>
-							<path d="M22 28 L38 28" stroke="var(--red)" stroke-width="1.5"/>
-						</svg>
-						<h3 class="category-title">Sauces</h3>
-					</div>
-					{#each sauces as item}
-						<div class="menu-item">
-							<span class="item-name">{item.name}</span>
-							<span class="item-dots"></span>
-							<span class="item-price">{item.price}</span>
-						</div>
-					{/each}
-				</div>
+		<div class="coming-soon">
+			<div class="coming-soon-icon">
+				<svg viewBox="0 0 80 80" aria-hidden="true">
+					<circle cx="40" cy="40" r="34" fill="none" stroke="var(--red)" stroke-width="2.5" stroke-dasharray="6 4" />
+					<path d="M40 20 V42 L54 50" fill="none" stroke="var(--red)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
 			</div>
+			<h3 class="coming-soon-title">Coming Soon</h3>
+			<p class="coming-soon-text">
+				We're still perfecting every recipe. Our full menu will be revealed when the doors open — stay tuned!
+			</p>
 		</div>
 	</div>
 </section>
@@ -140,7 +38,6 @@
 		margin: 0 auto;
 	}
 
-	/* Header */
 	.menu-header {
 		display: flex;
 		justify-content: space-between;
@@ -163,131 +60,54 @@
 		color: #66242b;
 	}
 
-	/* Snack van de maand */
-	.snack-card {
-		background: var(--red, #ff3b47);
-		color: #f7f3ee;
-		border-radius: 24px;
-		padding: clamp(24px, 3vw, 40px) clamp(24px, 3vw, 48px);
-		margin-bottom: clamp(32px, 4vw, 56px);
-		max-width: 680px;
-	}
-
-	.snack-title {
-		font-family: var(--serif);
-		font-weight: 400;
-		font-style: italic;
-		font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-		margin: 0 0 16px;
-		line-height: 1.1;
-	}
-
-	.snack-name {
-		font-weight: 700;
-		font-size: 0.9rem;
-		letter-spacing: 0.04em;
-		margin: 0 0 8px;
-	}
-
-	.snack-desc {
-		font-weight: 600;
-		font-size: 0.82rem;
-		line-height: 1.5;
-		margin: 0 0 16px;
-		text-transform: uppercase;
-	}
-
-	.snack-desc :global(em) {
-		font-style: italic;
-		font-weight: 700;
-	}
-
-	.snack-price {
-		display: inline-block;
-		background: rgba(0, 0, 0, 0.18);
-		color: #f7f3ee;
-		font-weight: 700;
-		font-size: 0.78rem;
-		padding: 6px 16px;
-		border-radius: 99px;
-		letter-spacing: 0.04em;
-	}
-
-	/* Columns */
-	.columns {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: clamp(32px, 5vw, 80px);
-	}
-
-	/* Category */
-	.category {
-		margin-bottom: clamp(32px, 4vw, 56px);
-	}
-
-	.category-header {
-		margin-bottom: clamp(16px, 2vw, 28px);
-	}
-
-	.category-icon {
-		width: 40px;
-		height: auto;
-		display: block;
-		margin-bottom: 4px;
-	}
-
-	.category-title {
-		font-family: var(--serif);
-		font-weight: 400;
-		font-style: italic;
-		font-size: clamp(2rem, 4vw, 3.2rem);
-		margin: 0;
-		line-height: 1.1;
-		color: #66242b;
-	}
-
-	/* Menu items */
-	.menu-item {
+	.coming-soon {
 		display: flex;
-		align-items: baseline;
-		padding: 10px 0;
-		gap: 8px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: clamp(48px, 6vw, 100px) 20px;
 	}
 
-	.item-name {
-		font-weight: 700;
-		font-size: 0.82rem;
-		letter-spacing: 0.04em;
-		white-space: nowrap;
-		flex-shrink: 0;
+	.coming-soon-icon {
+		width: 80px;
+		height: 80px;
+		margin-bottom: 24px;
+		animation: pulse 2.5s ease-in-out infinite;
 	}
 
-	.item-dots {
-		flex: 1;
-		border-bottom: 2px dotted rgba(102, 36, 43, 0.3);
-		min-width: 20px;
-		margin-bottom: 3px;
+	@keyframes pulse {
+		0%, 100% { opacity: 1; transform: scale(1); }
+		50% { opacity: 0.6; transform: scale(1.08); }
 	}
 
-	.item-price {
-		flex-shrink: 0;
+	.coming-soon-icon svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.coming-soon-title {
+		font-family: var(--serif);
+		font-weight: 400;
+		font-style: italic;
+		font-size: clamp(2rem, 4vw, 3.4rem);
+		margin: 0 0 16px;
+		color: var(--red);
+		line-height: 1.1;
+	}
+
+	.coming-soon-text {
+		max-width: 42ch;
 		font-weight: 600;
-		font-size: 0.78rem;
-		letter-spacing: 0.03em;
-		padding: 4px 14px;
-		border: 1.5px solid #66242b;
-		border-radius: 99px;
-		white-space: nowrap;
+		font-size: 0.95rem;
+		line-height: 1.5;
+		margin: 0;
+		color: #66242b;
+		opacity: 0.75;
 	}
 
-	/* Responsive */
-	@media (max-width: 860px) {
-		.columns {
-			grid-template-columns: 1fr;
-		}
-
-		.snack-card {
-			max-width: 100%;
+	@media (prefers-reduced-motion: reduce) {
+		.coming-soon-icon {
+			animation: none;
 		}
 	}
 </style>
